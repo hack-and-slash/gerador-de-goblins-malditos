@@ -4,6 +4,7 @@
   "rules": {
     "template-curly-spacing": "off",
     "indent": "off",
+    "linebreak-style": ["error", "windows"],
     "react/require-default-props": 0,
     "react/forbid-prop-types": [
       0

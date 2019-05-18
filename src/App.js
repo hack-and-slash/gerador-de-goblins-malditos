@@ -3,12 +3,34 @@ import './App.css';
 import goblinMaldito from './gerador';
 
 function App() {
-  const { coloracao, caracteristica, ocupacao } = goblinMaldito();
+  const {
+    nome,
+    coloracao,
+    caracteristica,
+    ocupacao,
+    combate,
+    conhecimento,
+    habilidade,
+    sorte,
+    equipamento,
+  } = goblinMaldito();
+
   return (
     <div className="App">
-      <p>Coloração: {coloracao}</p>
-      <p>Característica: {caracteristica}</p>
-      <p>Ocupação: {ocupacao}</p>
+      <h1>Goblin</h1>
+      <p>{nome}</p>
+      <p>{`Coloração: ${coloracao}`}</p>
+      <p>{`Característica: ${caracteristica}`}</p>
+      <p>{`Ocupação: ${ocupacao}`}</p>
+
+      <h3>Atributos</h3>
+      <p>{`Combate: ${combate}`}</p>
+      <p>{`Conhecimento: ${conhecimento}`}</p>
+      <p>{`Habilidade: ${habilidade}`}</p>
+      <p>{`Sorte: ${sorte}`}</p>
+
+      <h3>Equipamentos</h3>
+      <p>{equipamento}</p>
     </div>
   );
 }
