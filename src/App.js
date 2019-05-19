@@ -19,8 +19,7 @@ function App() {
     <div className="App">
       <h1>Goblin</h1>
       <p>{nome}</p>
-      <p>{`Coloração: ${coloracao}`}</p>
-      <p>{`Característica: ${caracteristica}`}</p>
+      <p>{`Aparência: ${coloracao} e ${caracteristica}`}</p>
       <p>{`Ocupação: ${ocupacao}`}</p>
 
       <h3>Atributos</h3>

@@ -10,10 +10,10 @@ const tabelaGoblin = {
   caracteristica: [
     'Insano',
     'Fedorento',
-    'Cicatrizes',
+    'com Cicatrizes',
     'Gordo',
     'Fala Errado',
-    'Anomalia *',
+    'com Anomalia *',
   ],
   ocupacao: [
     'Mercenário',
