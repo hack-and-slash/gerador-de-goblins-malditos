@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import { WiredCard } from 'wired-elements';
 import goblinMaldito from './gerador';
 
 function App() {
