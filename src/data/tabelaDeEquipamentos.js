@@ -1,5 +1,5 @@
 const equipamentoLeve = [
-  '2 Adagas*',
+  '2 Adagas* ',
   'Adaga',
   'Arco Simples',
   'Arco Composto',
