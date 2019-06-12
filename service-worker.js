@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/gerador-de-goblins-malditos/precache-manifest.1b9f484413aa1bd07e5c6db4b9d5a2b4.js"
+  "/gerador-de-goblins-malditos/precache-manifest.d05e6a4b1342b3df3f6d4012e928158a.js"
 );
 
 self.addEventListener('message', (event) => {
