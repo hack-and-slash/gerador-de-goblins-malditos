@@ -4,11 +4,11 @@
   "private": true,
   "homepage": "http://hack-and-slash.github.io/gerador-de-goblins-malditos",
   "dependencies": {
-    "gh-pages": "^2.0.1",
+    "gh-pages": "^2.1.1",
     "random-js": "^2.0.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-scripts": "^3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,9 +34,9 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-airbnb": "17.1.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-jsx-a11y": "^6.2.0",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0"
   }
 }
