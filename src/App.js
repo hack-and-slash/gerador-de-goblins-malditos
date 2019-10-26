@@ -30,6 +30,7 @@ function App() {
         <h1>Goblin</h1>
         <h2>{nome}</h2>
         <p>{`Aparência: ${coloracao} e ${caracteristica}`}</p>
+        {/* verificar se tem anomalias e mostrar ou nao esta linha */}
         <p>{`Anomalias: ${anomalias}`}</p>
         <p>{`Ocupação: ${ocupacao}`}</p>
 

@@ -1,6 +1,6 @@
 import { rolarDadoD6 } from './dados';
 
-function gerarAnomalias (roll) {
+function anomaliasTable (roll) {
   switch (roll) {
     case 3:
       return 'Manchas rosas'
@@ -20,9 +20,19 @@ function gerarAnomalias (roll) {
       return 'Duas Cabeças'
     case 11:
     case 12:
-      return [gerarAnomalias(rolarDadoD6() + rolarDadoD6()), gerarAnomalias(rolarDadoD6() + rolarDadoD6())].reduce((acc, x) => acc.concat(x), [])
+      return [anomaliasTable(rolarDadoD6() + rolarDadoD6()), anomaliasTable(rolarDadoD6() + rolarDadoD6())].reduce((acc, x) => acc.concat(x), [])
     default:
-      return 'Sem anomalia'
+      // case 2 ????
+      return ''
+  }
+}
+
+function gerarAnomalias (roll) {
+  const anomalias = anomaliasTable(roll)
+  if (typeof anomalias === 'string') {
+    return anomalias === '' ? [] : [anomalias]
+  } else {
+    return [...new Set(anomalias)].filter(elem => elem !== '')
   }
 }
 
