@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/gerador-de-goblins-malditos/static/css/main.7a87450d.chunk.css",
-    "main.js": "/gerador-de-goblins-malditos/static/js/main.0765d152.chunk.js",
-    "main.js.map": "/gerador-de-goblins-malditos/static/js/main.0765d152.chunk.js.map",
-    "runtime~main.js": "/gerador-de-goblins-malditos/static/js/runtime~main.576722ca.js",
-    "runtime~main.js.map": "/gerador-de-goblins-malditos/static/js/runtime~main.576722ca.js.map",
-    "static/js/2.f788c3e0.chunk.js": "/gerador-de-goblins-malditos/static/js/2.f788c3e0.chunk.js",
-    "static/js/2.f788c3e0.chunk.js.map": "/gerador-de-goblins-malditos/static/js/2.f788c3e0.chunk.js.map",
+    "main.js": "/gerador-de-goblins-malditos/static/js/main.dc350f77.chunk.js",
+    "main.js.map": "/gerador-de-goblins-malditos/static/js/main.dc350f77.chunk.js.map",
+    "runtime-main.js": "/gerador-de-goblins-malditos/static/js/runtime-main.f99c16bf.js",
+    "runtime-main.js.map": "/gerador-de-goblins-malditos/static/js/runtime-main.f99c16bf.js.map",
+    "static/js/2.0699bfb3.chunk.js": "/gerador-de-goblins-malditos/static/js/2.0699bfb3.chunk.js",
+    "static/js/2.0699bfb3.chunk.js.map": "/gerador-de-goblins-malditos/static/js/2.0699bfb3.chunk.js.map",
     "index.html": "/gerador-de-goblins-malditos/index.html",
-    "precache-manifest.d05e6a4b1342b3df3f6d4012e928158a.js": "/gerador-de-goblins-malditos/precache-manifest.d05e6a4b1342b3df3f6d4012e928158a.js",
-    "service-worker.js": "/gerador-de-goblins-malditos/service-worker.js",
-    "static/css/main.7a87450d.chunk.css.map": "/gerador-de-goblins-malditos/static/css/main.7a87450d.chunk.css.map"
-  }
+    "precache-manifest.a11324ef5fc1d3acc96d58dddd0f88b7.js": "/gerador-de-goblins-malditos/precache-manifest.a11324ef5fc1d3acc96d58dddd0f88b7.js",
+    "service-worker.js": "/gerador-de-goblins-malditos/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f99c16bf.js",
+    "static/js/2.0699bfb3.chunk.js",
+    "static/js/main.dc350f77.chunk.js"
+  ]
 }
