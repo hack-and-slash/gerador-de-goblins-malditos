@@ -23,7 +23,6 @@ function App() {
     setarGoblin((goblin) => [...goblin, item]);
   }
 
-
   return (
     <>
       <Goblin>
@@ -52,3 +51,4 @@ function App() {
 }
 
 export default App;
+  
