@@ -1,5 +1,5 @@
 const equipamentoLeve = [
-  '2 Adagas* ',
+  '2 Adagas [Pode ser arremeçado]',
   'Adaga',
   'Arco Simples',
   'Arco Composto',
@@ -10,20 +10,21 @@ const equipamentoLeve = [
 const equipamentoPesado = [
   'Espada e Escudo',
   'Machado e Elmo',
-  '2 Machadinhas*',
+  '2 Machadinhas [Pode ser arremeçado]',
   'Espadona',
   '2 Espadas e Armadura',
-  'Adaga *, Espada e Armadura',
+  'Adaga [Pode ser arremeçado], Espada e Armadura',
 ];
 
 const equipamentoExplosivo = [
   'Pistola e Elmo',
   '2 Pistolas',
-  '3 Galinhas Explosivas',
-  'Barril de Pólvora',
+  '3 Galinhas Explosivas [Dano em todos até 3m]',
+  'Barril de Pólvora [Dano em todos até 3m]',
   'Pistola e 2 Galinhas Explosivas',
-  'Canhão',
+  'Canhão Carregar [2 turnos]',
 ];
+
 
 const armasEDanos = [
   {
