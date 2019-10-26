@@ -50,8 +50,10 @@ function App() {
 
       <h3>Equipamentos</h3>
       <p>{goblin.equipamento}</p>
+      <button onClick={() => criaGoblin()}>Gerar</button>
     </div>
   );
 }
 
 export default App;
+  
