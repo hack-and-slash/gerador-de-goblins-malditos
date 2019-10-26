@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import goblinMaldito from './gerador';
 import GlobalStyle from './styles/global';
-import { Goblin } from './styles/styles';
+import { Goblin, Button } from './styles/styles';
 
 function App() {
   const {
@@ -15,6 +15,14 @@ function App() {
     sorte,
     equipamento,
   } = goblinMaldito();
+
+  const [, setarGoblin] = useState([]);
+
+  function obterNovoGoblin(e) {
+    const item = e.target.value;
+    setarGoblin((goblin) => [...goblin, item]);
+  }
+
 
   return (
     <>
@@ -32,6 +40,11 @@ function App() {
 
         <h3>Equipamentos</h3>
         <p>{equipamento}</p>
+
+        <Button type="button" onClick={obterNovoGoblin}>
+          Gerar Novo Goblin
+          <span role="img" aria-label="duende">🧝</span>
+        </Button>
       </Goblin>
       <GlobalStyle />
     </>
