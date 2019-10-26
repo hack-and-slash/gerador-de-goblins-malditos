@@ -1,7 +1,7 @@
-import { Random } from 'random-js';
-import tabelaGoblin from './data/tabelaGoblin';
-import tabelaDeAtributos from './data/tabelaDeAtributos';
-import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
+const { Random } = require('random-js');
+const tabelaGoblin = require('./data/tabelaGoblin');
+const tabelaDeAtributos = require('./data/tabelaDeAtributos');
+const tabelaDeEquipamentos = require('./data/tabelaDeEquipamentos');
 
 const rolarD6 = () => {
   const random = new Random();
@@ -78,4 +78,4 @@ const goblinMaldito = () => {
   return goblin;
 };
 
-export default goblinMaldito;
+module.exports = goblinMaldito;

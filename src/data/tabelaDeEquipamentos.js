@@ -74,4 +74,4 @@ const tabelaDeEquipamentos = {
   Xamã: 'Cajado',
 };
 
-export default tabelaDeEquipamentos;
+module.exports = tabelaDeEquipamentos;

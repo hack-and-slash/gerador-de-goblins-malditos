@@ -41,4 +41,4 @@ const tabelaGoblin = {
   ],
 };
 
-export default tabelaGoblin;
+module.exports = tabelaGoblin;
