@@ -6,6 +6,7 @@ import { Goblin, Button } from './styles/styles';
 function App() {
   const {
     nome,
+    anomalias,
     coloracao,
     caracteristica,
     ocupacao,
@@ -29,6 +30,7 @@ function App() {
         <h1>Goblin</h1>
         <h2>{nome}</h2>
         <p>{`Aparência: ${coloracao} e ${caracteristica}`}</p>
+        <p>{`Anomalias: ${anomalias}`}</p>
         <p>{`Ocupação: ${ocupacao}`}</p>
 
         <h3>Atributos</h3>
