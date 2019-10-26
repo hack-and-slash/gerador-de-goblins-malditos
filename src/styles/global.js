@@ -4,6 +4,7 @@ import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
   :root {
     --primaryColor: #198135;
+    --darkColor: #116527;
   }
 
   body {
