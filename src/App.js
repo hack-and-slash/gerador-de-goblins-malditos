@@ -1,35 +1,55 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import goblinMaldito from './gerador';
 
 function App() {
-  const {
-    nome,
-    coloracao,
-    caracteristica,
-    ocupacao,
-    combate,
-    conhecimento,
-    habilidade,
-    sorte,
-    equipamento,
-  } = goblinMaldito();
+  const [goblin, setGoblin] = useState({});
+
+  const criaGoblin = () => {
+    const {
+      nome,
+      coloracao,
+      caracteristica,
+      ocupacao,
+      combate,
+      conhecimento,
+      habilidade,
+      sorte,
+      equipamento,
+    } = goblinMaldito();
+
+    return setGoblin({
+      nome,
+      coloracao,
+      caracteristica,
+      ocupacao,
+      combate,
+      conhecimento,
+      habilidade,
+      sorte,
+      equipamento,
+    });
+  };
+
+  useEffect(() => {
+    criaGoblin();
+  }, []);
 
   return (
     <div className="App">
       <h1>Goblin</h1>
-      <h2>{nome}</h2>
-      <p>{`Aparência: ${coloracao} e ${caracteristica}`}</p>
-      <p>{`Ocupação: ${ocupacao}`}</p>
+      <h2>{goblin.nome}</h2>
+      <p>{`Aparência: ${goblin.coloracao} e ${goblin.caracteristica}`}</p>
+      <p>{`Ocupação: ${goblin.ocupacao}`}</p>
 
       <h3>Atributos</h3>
-      <p>{`Combate: ${combate}`}</p>
-      <p>{`Conhecimento: ${conhecimento}`}</p>
-      <p>{`Habilidade: ${habilidade}`}</p>
-      <p>{`Sorte: ${sorte}`}</p>
+      <p>{`Combate: ${goblin.combate}`}</p>
+      <p>{`Conhecimento: ${goblin.conhecimento}`}</p>
+      <p>{`Habilidade: ${goblin.habilidade}`}</p>
+      <p>{`Sorte: ${goblin.sorte}`}</p>
 
       <h3>Equipamentos</h3>
-      <p>{equipamento}</p>
+      <p>{goblin.equipamento}</p>
     </div>
   );
 }
