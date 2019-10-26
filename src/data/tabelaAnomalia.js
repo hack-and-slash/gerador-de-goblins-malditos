@@ -22,7 +22,7 @@ function gerarAnomalias (roll) {
     case 12:
       return [gerarAnomalias(rolarDadoD6() + rolarDadoD6()), gerarAnomalias(rolarDadoD6() + rolarDadoD6())].reduce((acc, x) => acc.concat(x), [])
     default:
-      return ''
+      return 'Sem anomalia'
   }
 }
 
