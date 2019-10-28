@@ -14,7 +14,7 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "lint": "./node_modules/.bin/eslint src/*.js"
+    "lint": "eslint src -c .eslintrc --ext .js"
   },
   "husky": {
     "hooks": {
