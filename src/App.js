@@ -17,6 +17,13 @@ function App() {
     equipamento,
   } = goblinMaldito();
 
+  /* Para setar propriedades padrões no goblin. Use:
+  *
+  *  goblinMaldito({
+  *     coloracao: "Verde",
+  *     ... (O que mais quiser sobrescrever)
+  *  });
+  */
   const [, setarGoblin] = useState([]);
 
   function obterNovoGoblin(e) {
