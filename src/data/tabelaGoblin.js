@@ -7,14 +7,6 @@ const tabelaGoblin = {
     'Vermelho',
     'Azul',
   ],
-  caracteristica: [
-    'Insano',
-    'Fedorento',
-    'com Cicatrizes',
-    'Gordo',
-    'Fala Errado',
-    'com Anomalia *',
-  ],
   ocupacao: [
     'Mercenário',
     'Caçador',

@@ -36,4 +36,21 @@ function gerarAnomalias (roll) {
   }
 }
 
-export default gerarAnomalias
+function gerarCaracteristica (roll) {
+  switch (roll) {
+    case 1:
+      return 'Insano'
+    case 2:
+      return 'Fedorento'
+    case 3:
+      return 'com Cicatrizes'
+    case 4:
+      return 'Gordo'
+    case 5:
+      return 'Fala Errado'
+    case 6:
+      return gerarAnomalias(rolarDadoD6() + rolarDadoD6())
+  }
+}
+
+export default gerarCaracteristica

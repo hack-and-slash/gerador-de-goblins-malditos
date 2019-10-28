@@ -1,5 +1,5 @@
-import { rolarD6, rolarDadoD6} from './data/dados';
-import gerarAnomalias from './data/tabelaAnomalia';
+import { rolarD6 } from './data/dados';
+import gerarCaracteristica from './data/caracteristicas';
 import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
 import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
@@ -51,10 +51,9 @@ const gerarEquipamento = (ocupacao) => {
 
 const goblinMaldito = () => {
   const coloracao = tabelaGoblin.coloracao[rolarD6()];
-  const caracteristica = tabelaGoblin.caracteristica[rolarD6()];
+  const caracteristica = gerarCaracteristica(rolarD6())
   const ocupacao = tabelaGoblin.ocupacao[rolarD6()];
   const nome = gerarNomeDoGoblin();
-  const anomalias = gerarAnomalias(rolarDadoD6() + rolarDadoD6());
   const combate = calcularAtributoDeCombate(coloracao, ocupacao);
   const conhecimento = calcularAtributoDeConhecimento(coloracao, ocupacao);
   const habilidade = calcularAtributoDeHabilidade(coloracao, ocupacao);
@@ -63,7 +62,6 @@ const goblinMaldito = () => {
 
   const goblin = {
     nome,
-    anomalias,
     coloracao,
     caracteristica,
     ocupacao,
