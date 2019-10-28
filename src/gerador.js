@@ -9,7 +9,7 @@ const rolarD6 = () => {
   return random.integer(0, 5);
 };
 
-const gerarNomeDoGoblin = () => {
+export const gerarNomeDoGoblin = () => {
   const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
   const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
 
