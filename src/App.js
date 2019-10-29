@@ -6,6 +6,7 @@ import { Goblin, Button } from './styles/styles';
 function App() {
   const {
     nome,
+    anomalias,
     coloracao,
     caracteristica,
     ocupacao,
