@@ -16,16 +16,15 @@
 
 
 <!-- TABLE OF CONTENTS -->
-## Índice
+## Ãndice
 
 * [Sobre o projeto](#sobre-o-projeto)
   * [Feito com](#feito-com)
-* [Mão na massa](#mão-na-massa)
-  * [Pré-requisitos](#pré\-requisitos)
-  * [Instalação](#instalação)
+* [MÃ£o na massa](#mÃ£o-na-massa)
+  * [PrÃ©-requisitos](#prÃ©\-requisitos)
+  * [InstalaÃ§Ã£o](#instalaÃ§Ã£o)
 * [Uso](#uso)
 * [Contribuindo](#contribuindo)
-* [Contato](#contato)
 
 
 
@@ -43,11 +42,11 @@ Gerador de goblins baseado no sistema [Malditos Goblins!](https://coisinhaverde.
 
 
 <!-- GETTING STARTED -->
-## Mão na massa
+## MÃ£o na massa
 
-Para conseguir uma cópia local que vocë possa trabalhar siga os seguintes passos:
+Para conseguir uma cÃ³pia local que vocÃ« possa trabalhar siga os seguintes passos:
 
-### Pré-requisitos
+### PrÃ©-requisitos
 
 
 * npm
@@ -55,9 +54,9 @@ Para conseguir uma cópia local que vocë possa trabalhar siga os seguintes passos
 npm install npm@latest -g
 ```
 
-### Instalação
+### InstalaÃ§Ã£o
 
-1. Clone o repositório
+1. Clone o repositÃ³rio
 ```sh
 git clone https://github.com/hack-and-slash/gerador-de-goblins-malditos.git
 ```
@@ -85,17 +84,11 @@ http://localhost:3000/
 <!-- CONTRIBUTING -->
 ## Contribuindo
 
-1. Faça um Fork do projeto
-2. Crie uma Branch da funcionalidade ou issue (`git checkout -b feature/AmazingFeature`)
-3. Faça o Commit das suas alterações (`git commit -m 'Add some AmazingFeature'`)
-4. Dê o Push para sua branch (`git push origin feature/AmazingFeature`)
+1. FaÃ§a um Fork do projeto
+2. Crie uma Branch da funcionalidade ou issue (`git checkout -b funcionalidade)
+3. FaÃ§a o Commit das suas alteraÃ§Ãµes (`git commit -m 'Adicionada alguma funcionalidade'`)
+4. DÃª o Push para sua branch (`git push origin gerador-de-goblins-malditos/funcionalidade`)
 5. Abra um Pull Request
-
-
-<!-- CONTACT -->
-## Contato
-
-Link do projeto: [https://github.com/hack-and-slash/gerador-de-goblins-malditos](https://github.com/hack-and-slash/gerador-de-goblins-malditos)
 
 
 
