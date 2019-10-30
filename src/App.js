@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import goblinMaldito from './gerador';
 import GlobalStyle from './styles/global';
 import { Goblin, Button } from './styles/styles';
+import * as Padroes from './data/padroes';
 
 function App() {
   const {
@@ -23,6 +24,17 @@ function App() {
   *     coloracao: "Verde",
   *     ... (O que mais quiser sobrescrever)
   *  });
+  * 
+  * Ou você também pode usar um de nossos padrões, como:
+  * 
+  * Padroes.xamaDaEscuridao
+  * Padroes.cacadorArqueiro
+  * Padroes.mercenarioLutador
+  * Padroes.gatunoDasTrevas
+  * Padroes.piromaniacoDasGalinhas
+  * Padroes.liderInsano
+  * 
+  * goblinMaldito(Padroes.xamaDaEscuridao)
   */
   const [, setarGoblin] = useState([]);
 
