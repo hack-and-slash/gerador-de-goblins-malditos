@@ -1,7 +1,7 @@
-import { Random } from 'random-js';
-import tabelaGoblin from './data/tabelaGoblin';
-import tabelaDeAtributos from './data/tabelaDeAtributos';
-import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
+import { Random } from "random-js";
+import tabelaGoblin from "./data/tabelaGoblin";
+import tabelaDeAtributos from "./data/tabelaDeAtributos";
+import tabelaDeEquipamentos from "./data/tabelaDeEquipamentos";
 
 const rolarD6 = () => {
   const random = new Random();
@@ -24,14 +24,16 @@ const calcularAtributoDeCombate = (coloracao, ocupacao) => {
 };
 
 const calcularAtributoDeConhecimento = (coloracao, ocupacao) => {
-  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].conhecimento;
+  const atributoPorColoracao =
+    tabelaDeAtributos.coloracao[coloracao].conhecimento;
   const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].conhecimento;
 
   return atributoPorColoracao + atributoPorOcupacao;
 };
 
 const calcularAtributoDeHabilidade = (coloracao, ocupacao) => {
-  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].habilidade;
+  const atributoPorColoracao =
+    tabelaDeAtributos.coloracao[coloracao].habilidade;
   const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].habilidade;
 
   return atributoPorColoracao + atributoPorOcupacao;
@@ -44,8 +46,8 @@ const calcularAtributoDeSorte = (coloracao, ocupacao) => {
   return atributoPorColoracao + atributoPorOcupacao;
 };
 
-const gerarEquipamento = (ocupacao) => {
-  if (ocupacao === 'Xamã') {
+const gerarEquipamento = ocupacao => {
+  if (ocupacao === "Xamã") {
     return tabelaDeEquipamentos[ocupacao];
   }
 
@@ -72,10 +74,20 @@ const goblinMaldito = () => {
     conhecimento,
     habilidade,
     sorte,
-    equipamento,
+    equipamento
   };
 
   return goblin;
+};
+
+export {
+  rolarD6,
+  gerarEquipamento,
+  gerarNomeDoGoblin,
+  calcularAtributoDeSorte,
+  calcularAtributoDeCombate,
+  calcularAtributoDeHabilidade,
+  calcularAtributoDeConhecimento
 };
 
 export default goblinMaldito;
