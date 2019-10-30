@@ -78,14 +78,4 @@ const goblinMaldito = () => {
   return goblin;
 };
 
-export {
-  rolarD6,
-  gerarNomeDoGoblin,
-  gerarEquipamento,
-  calcularAtributoDeCombate,
-  calcularAtributoDeConhecimento,
-  calcularAtributoDeHabilidade,
-  calcularAtributoDeSorte,
-};
-
 export default goblinMaldito;
