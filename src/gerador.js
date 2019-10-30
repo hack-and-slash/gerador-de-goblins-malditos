@@ -3,13 +3,7 @@ import gerarCaracteristica from './data/caracteristicas';
 import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
 import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
-
-const gerarNomeDoGoblin = () => {
-  const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
-  const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
-
-  return comecoDoNome + fimDoNome;
-};
+import gerarNomeDoGoblin from './data/nomes';
 
 const calcularAtributoDeCombate = (coloracao, ocupacao) => {
   const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].combate;
@@ -49,7 +43,7 @@ const gerarEquipamento = (ocupacao) => {
 
 const goblinMaldito = () => {
   const coloracao = tabelaGoblin.coloracao[rolarD6()];
-  const caracteristica = gerarCaracteristica(rolarDadoD6())
+  const caracteristica = gerarCaracteristica(rolarDadoD6());
   const ocupacao = tabelaGoblin.ocupacao[rolarD6()];
   const nome = gerarNomeDoGoblin();
   const combate = calcularAtributoDeCombate(coloracao, ocupacao);
