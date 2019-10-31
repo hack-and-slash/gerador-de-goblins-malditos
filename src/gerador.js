@@ -67,4 +67,4 @@ const goblinMaldito = () => {
   return goblin;
 };
 
-module.exports = goblinMaldito;
+export default goblinMaldito;
