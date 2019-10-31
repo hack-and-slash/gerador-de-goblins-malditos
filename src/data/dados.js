@@ -14,5 +14,5 @@ const rolarDadoD6 = () => {
 
 export {
   rolarD6,
-  rolarDadoD6
-}
+  rolarDadoD6,
+};
