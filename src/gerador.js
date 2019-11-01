@@ -4,13 +4,7 @@ import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
 import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
 import gerarNomeDoGoblin from './data/nomes';
-
-const calcularAtributoDeCombate = (coloracao, ocupacao) => {
-  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].combate;
-  const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].combate;
-
-  return atributoPorColoracao + atributoPorOcupacao;
-};
+import calcularAtributoDeCombate from './data/calcularAtributoDeCombate';
 
 const calcularAtributoDeConhecimento = (coloracao, ocupacao) => {
   const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].conhecimento;
