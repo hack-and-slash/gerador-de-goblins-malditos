@@ -77,4 +77,4 @@ const tabelaDeAtributos = {
   },
 };
 
-export default tabelaDeAtributos;
+module.exports = tabelaDeAtributos;
