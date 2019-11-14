@@ -3,7 +3,19 @@ import gerarCaracteristica from './data/caracteristicas';
 import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
 import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
-import gerarNomeDoGoblin from './data/nomes';
+
+const rolarD6 = () => {
+  const random = new Random();
+
+  return random.integer(0, 5);
+};
+
+export const gerarNomeDoGoblin = () => {
+  const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
+  const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
+
+  return comecoDoNome + fimDoNome;
+};
 
 const calcularAtributoDeCombate = (coloracao, ocupacao) => {
   const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].combate;
