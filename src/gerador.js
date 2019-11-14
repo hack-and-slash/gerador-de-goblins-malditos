@@ -4,12 +4,6 @@ import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
 import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
 
-const rolarD6 = () => {
-  const random = new Random();
-
-  return random.integer(0, 5);
-};
-
 export const gerarNomeDoGoblin = () => {
   const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
   const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
