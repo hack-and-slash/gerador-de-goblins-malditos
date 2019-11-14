@@ -53,7 +53,7 @@ const gerarEquipamento = (ocupacao) => {
   return tabelaDeEquipamentos[ocupacao][rolarD6()];
 };
 
-const goblinMaldito = () => {
+const goblinMaldito = (padroes = {}) => {
   const coloracao = tabelaGoblin.coloracao[rolarD6()];
   const caracteristica = gerarCaracteristica(rolarDadoD6());
   const ocupacao = tabelaGoblin.ocupacao[rolarD6()];
@@ -76,7 +76,7 @@ const goblinMaldito = () => {
     equipamento,
   };
 
-  return goblin;
+  return { ...goblin, ...padroes };
 };
 
 export default goblinMaldito;
