@@ -25,46 +25,6 @@ const equipamentoExplosivo = [
   'Canhão Carregar [2 turnos]',
 ];
 
-
-const armasEDanos = [
-  {
-    Adaga: 2,
-  },
-  {
-    'Arco Simples': 2,
-  },
-  {
-    'Arco Composto': 3,
-  },
-  {
-    Besta: 3,
-  },
-  {
-    Espada: 3,
-  },
-  {
-    Machado: 4,
-  },
-  {
-    Machadinha: 3,
-  },
-  {
-    Espadona: 5,
-  },
-  {
-    Pistola: 4,
-  },
-  {
-    'Galinhas Explosivas': 4,
-  },
-  {
-    'Barril de Pólvora': 5,
-  },
-  {
-    Canhão: 8,
-  },
-];
-
 const tabelaDeEquipamentos = {
   Mercenário: equipamentoPesado,
   Caçador: equipamentoLeve,
@@ -74,4 +34,4 @@ const tabelaDeEquipamentos = {
   Xamã: 'Cajado',
 };
 
-export default tabelaDeEquipamentos;
+module.exports = tabelaDeEquipamentos;

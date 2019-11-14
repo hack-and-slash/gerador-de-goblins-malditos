@@ -1,15 +1,10 @@
-import { Random } from "random-js";
-import tabelaGoblin from "./data/tabelaGoblin";
-import tabelaDeAtributos from "./data/tabelaDeAtributos";
-import tabelaDeEquipamentos from "./data/tabelaDeEquipamentos";
+import { rolarD6, rolarDadoD6 } from './data/dados';
+import gerarCaracteristica from './data/caracteristicas';
+import tabelaGoblin from './data/tabelaGoblin';
+import tabelaDeAtributos from './data/tabelaDeAtributos';
+import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
 
-const rolarD6 = () => {
-  const random = new Random();
-
-  return random.integer(0, 5);
-};
-
-const gerarNomeDoGoblin = () => {
+export const gerarNomeDoGoblin = () => {
   const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
   const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
 
@@ -54,9 +49,9 @@ const gerarEquipamento = ocupacao => {
   return tabelaDeEquipamentos[ocupacao][rolarD6()];
 };
 
-const goblinMaldito = () => {
+const goblinMaldito = (padroes = {}) => {
   const coloracao = tabelaGoblin.coloracao[rolarD6()];
-  const caracteristica = tabelaGoblin.caracteristica[rolarD6()];
+  const caracteristica = gerarCaracteristica(rolarDadoD6());
   const ocupacao = tabelaGoblin.ocupacao[rolarD6()];
   const nome = gerarNomeDoGoblin();
   const combate = calcularAtributoDeCombate(coloracao, ocupacao);
@@ -77,7 +72,7 @@ const goblinMaldito = () => {
     equipamento
   };
 
-  return goblin;
+  return { ...goblin, ...padroes };
 };
 
 export {
