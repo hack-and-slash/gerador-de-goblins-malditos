@@ -4,7 +4,7 @@ import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
 import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
 
-export const gerarNomeDoGoblin = () => {
+const gerarNomeDoGoblin = () => {
   const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
   const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
 
@@ -71,6 +71,16 @@ const goblinMaldito = (padroes = {}) => {
   };
 
   return { ...goblin, ...padroes };
+};
+
+export {
+  rolarD6,
+  gerarEquipamento,
+  gerarNomeDoGoblin,
+  calcularAtributoDeSorte,
+  calcularAtributoDeCombate,
+  calcularAtributoDeHabilidade,
+  calcularAtributoDeConhecimento,
 };
 
 export default goblinMaldito;
