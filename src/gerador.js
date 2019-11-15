@@ -2,14 +2,8 @@ import { rolarD6, rolarDadoD6 } from './data/dados';
 import gerarCaracteristica from './data/caracteristicas';
 import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
-import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
-
-const gerarNomeDoGoblin = () => {
-  const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
-  const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
-
-  return comecoDoNome + fimDoNome;
-};
+import gerarNomeDoGoblin from './data/nomes';
+import gerarEquipamento from './data/equipamentos';
 
 const calcularAtributoDeCombate = (coloracao, ocupacao) => {
   const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].combate;
@@ -39,15 +33,7 @@ const calcularAtributoDeSorte = (coloracao, ocupacao) => {
   return atributoPorColoracao + atributoPorOcupacao;
 };
 
-const gerarEquipamento = (ocupacao) => {
-  if (ocupacao === 'Xamã') {
-    return tabelaDeEquipamentos[ocupacao];
-  }
-
-  return tabelaDeEquipamentos[ocupacao][rolarD6()];
-};
-
-const goblinMaldito = (padroes = {}) => {
+const goblinMaldito = () => {
   const coloracao = tabelaGoblin.coloracao[rolarD6()];
   const caracteristica = gerarCaracteristica(rolarDadoD6());
   const ocupacao = tabelaGoblin.ocupacao[rolarD6()];
@@ -70,7 +56,7 @@ const goblinMaldito = (padroes = {}) => {
     equipamento,
   };
 
-  return { ...goblin, ...padroes };
+  return { ...goblin };
 };
 
 export {
