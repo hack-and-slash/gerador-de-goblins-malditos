@@ -7,9 +7,8 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+[![Build Status](https://travis-ci.com/hack-and-slash/gerador-de-goblins-malditos.svg?branch=master)](https://travis-ci.com/hack-and-slash/gerador-de-goblins-malditos)
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
 # Gerador de Goblins Malditos

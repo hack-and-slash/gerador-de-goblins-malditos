@@ -1,5 +1,7 @@
 import gerarNomeDoGoblin from '../data/nomes';
+import gerarEquipamento from '../data/equipamentos';
 import tabelaGoblin from '../data/tabelaGoblin';
+import tabelaDeEquipamentos from '../data/tabelaDeEquipamentos';
 
 describe('gerador', () => {
   describe('gerarNomeDoGoblin', () => {
@@ -19,6 +21,48 @@ describe('gerador', () => {
 
       expect(tabelaGoblin.comecoDoNome.includes(primeiroNome)).toBeTruthy();
       expect(tabelaGoblin.fimDoNome.includes(segundoNome)).toBeTruthy();
+    });
+  });
+
+  describe('gerarEquipamento', () => {
+    it('gera uma string', () => {
+      expect(typeof gerarEquipamento('Mercenário')).toBe('string');
+    });
+
+    it('equipamento válido para Mercenário', () => {
+      const ocupacao = 'Mercenário';
+      const equipamento = gerarEquipamento(ocupacao);
+      expect(tabelaDeEquipamentos[ocupacao].includes(equipamento)).toBeTruthy();
+    });
+
+    it('equipamento válido para Caçador', () => {
+      const ocupacao = 'Caçador';
+      const equipamento = gerarEquipamento(ocupacao);
+      expect(tabelaDeEquipamentos[ocupacao].includes(equipamento)).toBeTruthy();
+    });
+
+    it('equipamento válido para Gatuno', () => {
+      const ocupacao = 'Gatuno';
+      const equipamento = gerarEquipamento(ocupacao);
+      expect(tabelaDeEquipamentos[ocupacao].includes(equipamento)).toBeTruthy();
+    });
+
+    it('equipamento válido para Líder', () => {
+      const ocupacao = 'Líder';
+      const equipamento = gerarEquipamento(ocupacao);
+      expect(tabelaDeEquipamentos[ocupacao].includes(equipamento)).toBeTruthy();
+    });
+
+    it('equipamento válido para Piromaníaco', () => {
+      const ocupacao = 'Piromaníaco';
+      const equipamento = gerarEquipamento(ocupacao);
+      expect(tabelaDeEquipamentos[ocupacao].includes(equipamento)).toBeTruthy();
+    });
+
+    it('equipamento válido para Xamã', () => {
+      const ocupacao = 'Xamã';
+      const equipamento = gerarEquipamento(ocupacao);
+      expect(equipamento).toBe('Cajado');
     });
   });
 });
