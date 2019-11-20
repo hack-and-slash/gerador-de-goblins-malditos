@@ -2,9 +2,9 @@ import { rolarD6, rolarDadoD6 } from './data/dados';
 import gerarCaracteristica from './data/caracteristicas';
 import tabelaGoblin from './data/tabelaGoblin';
 import tabelaDeAtributos from './data/tabelaDeAtributos';
-import tabelaDeEquipamentos from './data/tabelaDeEquipamentos';
 import gerarNomeDoGoblin from './data/nomes';
 import calcularAtributoDeHabilidade from './data/calcularAtributoDeHabilidade';
+import gerarEquipamento from './data/equipamentos';
 
 const calcularAtributoDeCombate = (coloracao, ocupacao) => {
   const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].combate;
@@ -25,14 +25,6 @@ const calcularAtributoDeSorte = (coloracao, ocupacao) => {
   const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].sorte;
 
   return atributoPorColoracao + atributoPorOcupacao;
-};
-
-const gerarEquipamento = (ocupacao) => {
-  if (ocupacao === 'Xamã') {
-    return tabelaDeEquipamentos[ocupacao];
-  }
-
-  return tabelaDeEquipamentos[ocupacao][rolarD6()];
 };
 
 const goblinMaldito = () => {
@@ -58,7 +50,17 @@ const goblinMaldito = () => {
     equipamento,
   };
 
-  return goblin;
+  return { ...goblin };
+};
+
+export {
+  rolarD6,
+  gerarEquipamento,
+  gerarNomeDoGoblin,
+  calcularAtributoDeSorte,
+  calcularAtributoDeCombate,
+  calcularAtributoDeHabilidade,
+  calcularAtributoDeConhecimento,
 };
 
 export default goblinMaldito;
