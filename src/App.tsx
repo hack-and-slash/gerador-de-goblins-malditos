@@ -3,7 +3,7 @@ import goblinMaldito from './gerador';
 import GlobalStyle from './styles/global';
 import { Goblin, Button } from './styles/styles';
 
-function App() {
+function App(): JSX.Element {
   const {
     nome,
     coloracao,

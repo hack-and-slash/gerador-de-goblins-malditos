@@ -6,14 +6,26 @@ import gerarNomeDoGoblin from './data/nomes';
 import gerarEquipamento from './data/equipamentos';
 import { Atributos, Coloracao, Ocupacao } from './types';
 
-const calcularAtributo = (coloracao: Coloracao, ocupacao: Ocupacao, atributo: Atributos) => {
+const calcularAtributo = (coloracao: Coloracao, ocupacao: Ocupacao, atributo: Atributos): number => {
   const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao][atributo];
   const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao][atributo];
 
   return atributoPorColoracao + atributoPorOcupacao;
 };
 
-const goblinMaldito = () => {
+interface Goblin {
+  nome: string;
+  coloracao: Coloracao;
+  caracteristica: string | string[];
+  ocupacao: Ocupacao;
+  combate: number;
+  conhecimento: number;
+  habilidade: number;
+  sorte: number;
+  equipamento: string;
+}
+
+const goblinMaldito = (): Goblin => {
   const coloracao = tabelaGoblin.coloracao[rolarD6()] as Coloracao;
   const caracteristica = gerarCaracteristica(rolarDadoD6());
   const ocupacao = tabelaGoblin.ocupacao[rolarD6()] as Ocupacao;
