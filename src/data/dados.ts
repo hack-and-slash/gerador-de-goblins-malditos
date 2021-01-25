@@ -12,7 +12,4 @@ const rolarDadoD6 = () => {
   return random.integer(1, 6);
 };
 
-export {
-  rolarD6,
-  rolarDadoD6,
-};
+export { rolarD6, rolarDadoD6 };

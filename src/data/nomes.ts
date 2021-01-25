@@ -1,7 +1,7 @@
 import tabelaGoblin from './tabelaGoblin';
 import { rolarD6 } from './dados';
 
-const gerarNomeDoGoblin = () => {
+const gerarNomeDoGoblin = (): string => {
   const comecoDoNome = tabelaGoblin.comecoDoNome[rolarD6()];
   const fimDoNome = tabelaGoblin.fimDoNome[rolarD6()];
 
