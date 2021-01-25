@@ -18,9 +18,8 @@ function App() {
 
   const [, setarGoblin] = useState([]);
 
-  function obterNovoGoblin(e) {
-    const item = e.target.value;
-    setarGoblin((goblin) => [...goblin, item]);
+  function obterNovoGoblin() {
+    setarGoblin(goblin => [...goblin]);
   }
 
   return (
@@ -42,7 +41,6 @@ function App() {
 
         <Button type="button" onClick={obterNovoGoblin}>
           Gerar Novo Goblin
-          <span role="img" aria-label="duende">🧝</span>
         </Button>
       </Goblin>
       <GlobalStyle />
