@@ -10,7 +10,7 @@ export const Goblin = styled.div`
   }
 `;
 
-export const Button = styled.div`
+export const Button = styled.button`
   background-color: var(--primaryColor);
   color: #fff;
   padding: 0 10px 3px;
