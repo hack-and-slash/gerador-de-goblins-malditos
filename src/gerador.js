@@ -5,30 +5,9 @@ import tabelaDeAtributos from './data/tabelaDeAtributos';
 import gerarNomeDoGoblin from './data/nomes';
 import gerarEquipamento from './data/equipamentos';
 
-const calcularAtributoDeCombate = (coloracao, ocupacao) => {
-  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].combate;
-  const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].combate;
-
-  return atributoPorColoracao + atributoPorOcupacao;
-};
-
-const calcularAtributoDeConhecimento = (coloracao, ocupacao) => {
-  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].conhecimento;
-  const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].conhecimento;
-
-  return atributoPorColoracao + atributoPorOcupacao;
-};
-
-const calcularAtributoDeHabilidade = (coloracao, ocupacao) => {
-  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].habilidade;
-  const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].habilidade;
-
-  return atributoPorColoracao + atributoPorOcupacao;
-};
-
-const calcularAtributoDeSorte = (coloracao, ocupacao) => {
-  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao].sorte;
-  const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao].sorte;
+const calcularAtributo = (coloracao, ocupacao, atributo) => {
+  const atributoPorColoracao = tabelaDeAtributos.coloracao[coloracao][atributo];
+  const atributoPorOcupacao = tabelaDeAtributos.ocupacao[ocupacao][atributo];
 
   return atributoPorColoracao + atributoPorOcupacao;
 };
@@ -38,10 +17,10 @@ const goblinMaldito = () => {
   const caracteristica = gerarCaracteristica(rolarDadoD6());
   const ocupacao = tabelaGoblin.ocupacao[rolarD6()];
   const nome = gerarNomeDoGoblin();
-  const combate = calcularAtributoDeCombate(coloracao, ocupacao);
-  const conhecimento = calcularAtributoDeConhecimento(coloracao, ocupacao);
-  const habilidade = calcularAtributoDeHabilidade(coloracao, ocupacao);
-  const sorte = calcularAtributoDeSorte(coloracao, ocupacao);
+  const combate = calcularAtributo(coloracao, ocupacao, 'combate');
+  const conhecimento = calcularAtributo(coloracao, ocupacao, 'conhecimento');
+  const habilidade = calcularAtributo(coloracao, ocupacao, 'habilidade');
+  const sorte = calcularAtributo(coloracao, ocupacao, 'sorte');
   const equipamento = gerarEquipamento(ocupacao);
 
   const goblin = {
@@ -59,14 +38,6 @@ const goblinMaldito = () => {
   return { ...goblin };
 };
 
-export {
-  rolarD6,
-  gerarEquipamento,
-  gerarNomeDoGoblin,
-  calcularAtributoDeSorte,
-  calcularAtributoDeCombate,
-  calcularAtributoDeHabilidade,
-  calcularAtributoDeConhecimento,
-};
+export { rolarD6, gerarEquipamento, gerarNomeDoGoblin, calcularAtributo };
 
 export default goblinMaldito;
