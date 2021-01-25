@@ -1,0 +1,5 @@
+node_modules
+coverage/*
+build/*
+serviceWorker.js
+react-app-env.d.ts
