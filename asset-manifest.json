@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.js": "/gerador-de-goblins-malditos/static/js/main.dc350f77.chunk.js",
-    "main.js.map": "/gerador-de-goblins-malditos/static/js/main.dc350f77.chunk.js.map",
-    "runtime-main.js": "/gerador-de-goblins-malditos/static/js/runtime-main.f99c16bf.js",
-    "runtime-main.js.map": "/gerador-de-goblins-malditos/static/js/runtime-main.f99c16bf.js.map",
-    "static/js/2.0699bfb3.chunk.js": "/gerador-de-goblins-malditos/static/js/2.0699bfb3.chunk.js",
-    "static/js/2.0699bfb3.chunk.js.map": "/gerador-de-goblins-malditos/static/js/2.0699bfb3.chunk.js.map",
+    "main.js": "/gerador-de-goblins-malditos/static/js/main.4ad338e9.chunk.js",
+    "main.js.map": "/gerador-de-goblins-malditos/static/js/main.4ad338e9.chunk.js.map",
+    "runtime-main.js": "/gerador-de-goblins-malditos/static/js/runtime-main.00407b70.js",
+    "runtime-main.js.map": "/gerador-de-goblins-malditos/static/js/runtime-main.00407b70.js.map",
+    "static/js/2.0db807e2.chunk.js": "/gerador-de-goblins-malditos/static/js/2.0db807e2.chunk.js",
+    "static/js/2.0db807e2.chunk.js.map": "/gerador-de-goblins-malditos/static/js/2.0db807e2.chunk.js.map",
     "index.html": "/gerador-de-goblins-malditos/index.html",
-    "precache-manifest.a11324ef5fc1d3acc96d58dddd0f88b7.js": "/gerador-de-goblins-malditos/precache-manifest.a11324ef5fc1d3acc96d58dddd0f88b7.js",
-    "service-worker.js": "/gerador-de-goblins-malditos/service-worker.js"
+    "precache-manifest.0a9c96c20474f3ff3d46a3f7b64e6cee.js": "/gerador-de-goblins-malditos/precache-manifest.0a9c96c20474f3ff3d46a3f7b64e6cee.js",
+    "service-worker.js": "/gerador-de-goblins-malditos/service-worker.js",
+    "static/js/2.0db807e2.chunk.js.LICENSE.txt": "/gerador-de-goblins-malditos/static/js/2.0db807e2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f99c16bf.js",
-    "static/js/2.0699bfb3.chunk.js",
-    "static/js/main.dc350f77.chunk.js"
+    "static/js/runtime-main.00407b70.js",
+    "static/js/2.0db807e2.chunk.js",
+    "static/js/main.4ad338e9.chunk.js"
   ]
 }
